@@ -1,0 +1,99 @@
+/* PREMIUM GRADIENT DESIGN */
+
+body{
+    background: linear-gradient(
+    135deg,
+    #0f0c29,
+    #302b63,
+    #24243e
+    );
+    
+    min-height:100vh;
+    color:white;
+}
+
+
+/* HEADER */
+
+header{
+    background: linear-gradient(
+    90deg,
+    #00c6ff,
+    #0072ff
+    );
+
+    padding:40px 20px;
+    text-align:center;
+}
+
+
+/* CARD */
+
+.card{
+    background: linear-gradient(
+    145deg,
+    rgba(255,255,255,0.08),
+    rgba(255,255,255,0.02)
+    );
+
+    backdrop-filter: blur(12px);
+
+    border:1px solid rgba(255,255,255,0.1);
+
+    box-shadow:
+    0 8px 32px rgba(0,0,0,0.4);
+
+    border-radius:25px;
+}
+
+
+/* BUTTON */
+
+button{
+    background: linear-gradient(
+    90deg,
+    #00dbde,
+    #fc00ff
+    );
+
+    color:white;
+}
+
+
+/* COPY BUTTON */
+
+.copy-btn{
+    background: linear-gradient(
+    90deg,
+    #11998e,
+    #38ef7d
+    );
+}
+
+
+/* RESULT BOX */
+
+#result{
+    background: linear-gradient(
+    135deg,
+    rgba(0,0,0,0.4),
+    rgba(255,255,255,0.05)
+    );
+
+    border:1px solid rgba(255,255,255,0.1);
+}
+
+
+/* INPUT */
+
+input{
+    background: rgba(255,255,255,0.1);
+
+    color:white;
+
+    border:1px solid rgba(255,255,255,0.15);
+}
+
+input::placeholder{
+    color:#d1d5db;
+}
