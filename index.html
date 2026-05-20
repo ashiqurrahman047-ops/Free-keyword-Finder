@@ -1,0 +1,82 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>YouTube SEO Tool - UR_Ashiq</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <script>
+    function generateTags() {
+      let keyword = document.getElementById("keyword").value;
+
+      if(keyword === ""){
+        alert("Please enter a keyword");
+        return;
+      }
+
+      let tags = [
+        keyword,
+        keyword + " tutorial",
+        keyword + " bangla",
+        keyword + " seo",
+        keyword + " youtube seo",
+        keyword + " viral video",
+        keyword + " trending",
+        keyword + " tips",
+        keyword + " 2026",
+        keyword + " best video",
+        keyword + " guide",
+        keyword + " youtube ranking"
+      ];
+
+      document.getElementById("result").innerHTML = tags.join(", ");
+    }
+
+    function copyTags() {
+      let text = document.getElementById("result").innerText;
+
+      navigator.clipboard.writeText(text);
+
+      alert("Tags copied!");
+    }
+  </script>
+</head>
+
+<body>
+
+  <header>
+    <h1>UR_Ashiq YouTube SEO Tool</h1>
+    <p>Generate Viral YouTube Tags Instantly</p>
+  </header>
+
+  <div class="container">
+
+    <div class="card">
+
+      <h2>YouTube Tag Generator</h2>
+
+      <input type="text" id="keyword" placeholder="Enter video keyword">
+
+      <button onclick="generateTags()">Generate Tags</button>
+
+      <div class="output">
+        <h3>Generated Tags:</h3>
+
+        <p id="result"></p>
+
+        <button class="copy-btn" onclick="copyTags()">Copy Tags</button>
+      </div>
+
+    </div>
+
+  </div>
+
+  <footer>
+    <p>© 2026 UR_Ashiq | YouTube SEO Website</p>
+  </footer>
+
+</body>
+</html>
